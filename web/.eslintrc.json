@@ -1,9 +1,0 @@
-{
-  "root": true,
-  "extends": ["next/core-web-vitals", "eslint:recommended"],
-  "env": {
-    "node": true,
-    "browser": true,
-    "amd": true
-  }
-}

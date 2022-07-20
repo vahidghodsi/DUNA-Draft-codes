@@ -1,0 +1,275 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700;900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  /* -webkit-font-smoothing: antialiased; */
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Miriam Libre", "Nunito", sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+  /* font-size: calc(10px + 2vmin); */
+  font-size: calc(7px + 2vmin);
+  font-weight: 200;
+  color: var(--color-primary);
+}
+
+/* html {
+} */
+
+/* body {
+  background: rgb(230, 230, 230);
+} */
+
+#__next,
+#root {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  /* overflow-x: hidden; */
+}
+
+#__next > main {
+  flex-grow: 1;
+}
+
+::selection {
+  color: var(--theme_font-color-2);
+  background: var(--theme_font-color-1);
+}
+/* ::-webkit-scrollbar — the entire scrollbar.
+::-webkit-scrollbar-button — the buttons on the scrollbar (arrows pointing upwards and downwards that scroll one line at a time).
+::-webkit-scrollbar-thumb — the draggable scrolling handle.
+::-webkit-scrollbar-track — the track (progress bar) of the scrollbar, where there is a gray bar on top of a white bar.
+::-webkit-scrollbar-track-piece — the part of the track (progress bar) not covered by the handle.
+::-webkit-scrollbar-corner — the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. This is often the bottom-right corner of the browser window.
+::-webkit-resizer — the draggable resizing handle that appears at the bottom corner of some elements. */
+*::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+  /* padding: 2px; */
+  /* margin: 10px 0; */
+}
+*::-webkit-scrollbar:hover {
+  width: 14px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  /* background: var(--color-secondary); */
+  background: var(--color-light);
+}
+*::-webkit-scrollbar-thumb:hover {
+  /* background: var(--color-primary); */
+  background: var(--color-secondary);
+}
+*::-webkit-scrollbar-track {
+  margin: 8px;
+  border-radius: 5px;
+  /* border: 1px solid var(--color-secondary); */
+  /* border: 1px solid var(--color-light); */
+}
+/* *::-webkit-scrollbar-button {
+  height: 9px;
+  width: 9px;
+  border-radius: 5px;
+  border: 1px solid var(--color-secondary);
+} */
+/* *::-webkit-scrollbar-button:hover {
+  background: var(--color-secondary);
+} */
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App-dev-tools {
+  padding: 0 10px;
+  font-size: 0.6em;
+  border-top: 2px solid rgb(105, 116, 99);
+  background: rgb(191, 214, 177);
+  transition: all 0.4s ease-in-out 0s;
+}
+.appdevtools__fixed-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* ROOT -------------------- */
+:root {
+  --layout_header-height: 48px;
+  --layout_footer-height: 48px;
+
+  --background: rgb(255, 255, 255);
+  --background-light: rgb(255, 255, 255);
+  --background-dark: rgb(60, 60, 60);
+  --background-success: rgba(136, 204, 122, 0.1);
+  --background-error: rgba(230, 96, 69, 0.1);
+  --background-warning: rgba(230, 194, 92, 0.1);
+  --background-info: rgba(76, 182, 191, 0.1);
+  --background-dev: rgba(255, 179, 0, 0.1);
+
+  --color-primary: rgb(50, 50, 50);
+  --color-primary-hover: rgb(30, 30, 30);
+  --color-secondary: rgb(200, 200, 200);
+  --color-secondary-hover: rgb(230, 230, 230);
+  --color-disabled: rgb(215, 215, 215);
+  --color-dark: rgb(10, 10, 10);
+  --color-middle: rgb(125, 125, 125);
+  --color-light: rgb(240, 240, 240);
+
+  --color-info: rgb(76, 182, 191);
+  --color-info_hover: rgb(87, 207, 217);
+  --color-indo_disabled: rgb(173, 213, 217);
+  --color-warning: rgb(230, 194, 92);
+  --color-warning_hover: rgb(255, 216, 102);
+  --color-warning_disabled: rgb(230, 219, 184);
+  --color-error: rgb(230, 96, 69);
+  --color-error_hover: rgb(255, 106, 76);
+  --color-error_disabled: rgb(230, 192, 184);
+  --color-success: rgb(136, 204, 122);
+  --color-success_hover: rgb(153, 230, 137);
+  --color-success_disabled: rgb(187, 204, 184);
+  --color-dev: rgb(255, 179, 0);
+  --color-presentation: rgb(113, 165, 183);
+
+  --shadow-primary-color: var(--color-middle);
+  --shadow-primary: 0px 0px 5px 1px var(--color-middle);
+  --text-shadow-primary: 0px 0px 4px var(--color-middle);
+  --shadow-secondary-color: var(--color-light);
+  --shadow-secondary: 0px 0px 5px 1px var(--color-light);
+  --text-shadow-secondary: 0px 0px 5px 1px var(--color-light);
+  --shadow-hover: 0px 0px 15px 2px var(--color-primary);
+
+  --shadow-info: 0px 0px 5px 1px var(--color-info);
+  --text-shadow-info: 0px 0px 5px 1px var(--color-info);
+  --shadow-warning: 0px 0px 5px 1px var(--color-warning);
+  --text-shadow-warning: 0px 0px 5px 1px var(--color-warning);
+  --shadow-success: 0px 0px 5px 1px var(--color-success);
+  --text-shadow-success: 0px 0px 5px 1px var(--color-success);
+  --shadow-error: 0px 0px 5px 1px var(--color-error);
+  --text-shadow-error: 0px 0px 5px 1px var(--color-error);
+  --shadow-dev: 0px 0px 5px 1px var(--color-dev);
+  --text-shadow-dev: 0px 0px 5px 1px var(--color-dev);
+
+  --border-layout: 3px solid var(--color-primary);
+  --border-primary: 2px solid var(--color-primary);
+  --border-secondary: 1px solid var(--color-secondary);
+  --border-dev: 1px dashed var(--color-dev);
+  --border-color-primary: var(--color-primary);
+  --border-color-secondary: var(--color-secondary);
+
+  --transition-primary: all 0.3s ease-in-out 0s;
+  --transition-general: all 0.3s ease-in-out 0s;
+  --transition-menu: 0.5s ease-in-out 0s;
+  --transition-elements: all 0.15s ease-out, color 0s ease;
+  --transition-none: none;
+}
+
+/* THEME Styles -------------------- */
+
+._dev {
+  background: var(--color-dev);
+}
+
+/* ._info { */
+  /* background-color: var(--background-info);
+  border-color: var(--color-info); */
+/* } */
+/* ._success { */
+  /* background-color: var(--background-success);
+  border-color: var(--color-success); */
+/* } */
+/* ._warning { */
+  /* background-color: var(--background-warning);
+  border-color: var(--color-warning); */
+/* } */
+/* ._error { */
+  /* background-color: var(--background-error);
+  border-color: var(--color-error); */
+/* } */
+
+._background-blur-primary {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+._text-dev {
+  color: var(--color-guides);
+}
+._text-info {
+  color: var(--color-info);
+}
+._text-success {
+  color: var(--color-success);
+}
+._text-warning {
+  color: var(--color-warning);
+}
+._text-error {
+  color: var(--color-error);
+}
+._text-presentation {
+  color: var(--color-presentation);
+}
+
+._bg-dev {
+  color: var(--color-guides);
+}
+._bg-info {
+  background-color: var(--background-info);
+}
+._bg-success {
+  background-color: var(--background-success);
+}
+._bg-warning {
+  background-color: var(--background-warning);
+}
+._bg-error {
+  background-color: var(--background-error);
+}
+
+._transition-primary {
+  transition: var(--transition-primary) !important;
+}
+._transition-primary * {
+  transition: var(--transition-primary) !important;
+}
+._transition-none {
+  transition: var(--transition-none) !important;
+}
+._transition-none * {
+  transition: var(--transition-none) !important;
+}

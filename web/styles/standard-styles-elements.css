@@ -1,0 +1,138 @@
+/* ===== MEDIA ========== */
+/* @media (min-width: 450px) {} */
+
+/* @media (min-width: 700px) {} */
+
+/* @media (max-width: 500px) {}
+
+@media (min-width: 500px) {}
+
+@media (min-width: 850px) {} 
+
+@media (min-width: 1200px) {} */
+
+/* ===== STANDARD CLASSES ========== */
+
+/* ===== CARD ========== */
+._card {
+  margin: 12px 0;
+  padding: 13px;
+  border: var(--border-secondary);
+  border-radius: 5px;
+}
+._card:hover,
+._card._active {
+  padding: 12px;
+  border: var(--border-primary);
+}
+/* or _selected */
+._card._active {
+  padding: 20px;
+  border: var(--border-primary);
+  box-shadow: var(--shadow-primary);
+}
+._card ._title {
+  margin: 0 !important;
+}
+._card ._title .content {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+._card._title .sub-content {
+  font-size: 11px;
+}
+._card._profile-tumbnail,
+._card._tag {
+  margin: 0px 1px !important;
+}
+
+/* ===== ADD-NEW-ITEM-CARD ========== */
+._add-new-item_card {
+  /* height: 74px; */
+  align-items: center;
+  border-radius: 5px;
+}
+._add-new-item_card > ._title {
+  margin: 0 !important;
+}
+._add-new-item_card:hover {
+  padding: 12px;
+  border: var(--border-primary);
+}
+._add-new-item_card._minimized {
+  box-shadow: none;
+  gap: 0;
+}
+._add-new-item_card._minimized:not(:hover) {
+  padding: 13px;
+  border: 1px dashed var(--color-secondary);
+}
+._add-new-item_card._expanded {
+
+}
+
+
+/* position: "absolute",
+  left: "0",
+  bottom: "0",
+  height: "74px",
+  width: "25vw",
+  minWidth: "320px",
+  "._modal-container": {
+    height: "100%",
+    width: "100%",
+    padding: "20px",
+    overflow: "hidden",
+    form: {
+      height: "100%",
+      // gap: "0",
+    },
+    // "._grid-2row-fix-top": {
+    // },
+    // "._grid-3col-fix-left-right": {
+    // },
+    "&:hover": {
+      
+    },
+    "._head": {
+      height: "24px",
+      overflow: "hidden",
+    },
+    "._body": {
+      "> ._grid-2row-fix-top": {
+        height: "100%",
+      },
+    },
+    "._button": {
+      width: "110px",
+    },
+  },
+
+  "&._minimized": {
+    "._modal-container": {
+      
+    },
+
+  },
+  "&._open": {
+    height: "100%",
+    // "._head": {},
+  },
+  "&._expanded": {
+    height: "100%",
+    width: "100%",
+    // height: "calc(100% + 120px)",
+    // bottom: "-10px",
+    // width: "calc(100% + 50px)",
+    // left: "-25px",
+    // form: {
+    //   gap: "12px",
+    // },
+    // "._head": {},
+  }, */
+
+
+
+/* ===== DISPLAY ========== */
+
+/* ._display{} */

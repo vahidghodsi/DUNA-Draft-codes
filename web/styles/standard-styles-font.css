@@ -1,0 +1,66 @@
+/* ---------------- MEDIA ------------------ */
+/* @media (min-width: 450px) {} */
+
+/* @media (min-width: 700px) {} */
+
+/* @media (max-width: 500px) {}
+
+@media (min-width: 500px) {}
+
+@media (min-width: 850px) {} 
+
+@media (min-width: 1200px) {} */
+
+/* ---------------- STANDARD CLASSES ------------------ */
+
+._bold {
+  font-weight: bold;
+}
+
+._f-primary {
+  color: var(--color-primary);
+}
+._f-secondary {
+  color: var(--color-secondary);
+}
+._s-headline {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin: 0.5em 0px;
+  font-weight: bold;
+  line-height: 1em;
+}
+._f-title {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  margin: 20px 0px;
+  font-weight: bold;
+}
+._f-sub-title {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  margin: 10px 0px;
+  font-weight: normal;
+}
+._f-highlighted {
+  /* text-shadow: 5px -1px 10px var(--theme_color-2); */
+  font-weight: bold;
+  text-shadow: var(--text-shadow-primary);
+  text-decoration: underline 0.08em var(--color-primary);
+}
+._f-underline {
+  text-decoration: underline 0.08em var(--color-primary);
+}
+
+._sh-t-primary {
+  text-shadow: var(--text-shadow-primary);
+}
+._sh-t-primary-hover:hover {
+  text-shadow: var(--text-shadow-primary);
+}
+._sh-t-secondary {
+  text-shadow: var(--text-shadow-secondary);
+}
+._sh-t-secondary-hover:hover {
+  text-shadow: var(--text-shadow-secondary);
+}

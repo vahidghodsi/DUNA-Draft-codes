@@ -11,18 +11,16 @@
       "@services/*": ["services/*"],
       "@models/*": ["models/*"],
       "@api/*": ["pages/api/*"],
-      "@context/*": ["context/*"], 
-      "@styles/*": ["styles/*"], 
+      "@context/*": ["context/*"],
+      "@styles/*": ["styles/*"]
     },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
+    // "skipLibCheck": true,
+    "skipLibCheck": false,
+    // "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "incremental": true,
@@ -33,14 +31,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.js",
-    "**/*.jsx",
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+  "exclude": ["node_modules"]
 }
